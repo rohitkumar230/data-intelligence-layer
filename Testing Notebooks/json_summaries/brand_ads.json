@@ -1,0 +1,228 @@
+{
+  "name": "brand_ads",
+  "file_name": "brand_ads",
+  "dataset_description": "This dataset contains information about brand advertisements across different TV platforms, including details about ad placement, viewership metrics, and content information.",
+  "fields": [
+    {
+      "column": "tv_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "OTT"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "platform",
+        "description": "The type of TV platform where the ad was shown, e.g., OTT (Over-The-Top) for streaming services."
+      }
+    },
+    {
+      "column": "region",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Honolulu",
+          "Montgomery-Selma",
+          "New Orleans"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "location",
+        "description": "The geographic region where the ad was aired."
+      }
+    },
+    {
+      "column": "ad_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "1-800-HANSONS - Home Improvement Installation Services",
+          "1-800-HANSONS"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "advertisement",
+        "description": "The name or title of the advertisement."
+      }
+    },
+    {
+      "column": "ad_duration",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "14s",
+          "59s",
+          "29s"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "duration",
+        "description": "The length of the advertisement in seconds."
+      }
+    },
+    {
+      "column": "product",
+      "properties": {
+        "dtype": "date",
+        "min": null,
+        "max": null,
+        "samples": [],
+        "num_unique_values": 0,
+        "semantic_type": "product",
+        "description": "The specific product being advertised."
+      }
+    },
+    {
+      "column": "category",
+      "properties": {
+        "dtype": "date",
+        "min": null,
+        "max": null,
+        "samples": [],
+        "num_unique_values": 0,
+        "semantic_type": "category",
+        "description": "The category of the product or service being advertised."
+      }
+    },
+    {
+      "column": "first_aired",
+      "properties": {
+        "dtype": "date",
+        "min": null,
+        "max": null,
+        "samples": [],
+        "num_unique_values": 0,
+        "semantic_type": "date",
+        "description": "The date when the advertisement was first aired."
+      }
+    },
+    {
+      "column": "last_aired",
+      "properties": {
+        "dtype": "date",
+        "min": null,
+        "max": null,
+        "samples": [],
+        "num_unique_values": 0,
+        "semantic_type": "date",
+        "description": "The date when the advertisement was last aired."
+      }
+    },
+    {
+      "column": "thumbnail_link",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "https://www.teletrax.com/clientvideos/CL16546/2023-08-22/AE16546-2023-34-02610/CL16546-us-west-10623630-df95766e-12ee-4072-9f96-17049bf17852.jpg",
+          "https://www.teletrax.com/clientvideos/CL16546/2024-08-27/AE16546-2024-35-01555/CL16546-us-central-9352572-32f8e06d-4c8d-4938-9c3d-8204647b4834.jpg",
+          "https://www.teletrax.com/clientvideos/CL16546/2024-09-19/AE16546-2024-38-05865/CL16546-us-west-17004377-30ecc575-76ac-491b-8301-90a573b9d9ee.jpg"
+        ],
+        "num_unique_values": 7,
+        "semantic_type": "url",
+        "description": "URL link to the thumbnail image of the advertisement."
+      }
+    },
+    {
+      "column": "video_link",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "https://www.teletrax.com/clientvideos/CL16546/2023-08-22/AE16546-2023-34-02610/CL16546-us-west-10623630-df95766e-12ee-4072-9f96-17049bf17852.mp4",
+          "https://www.teletrax.com/clientvideos/CL16546/2024-08-27/AE16546-2024-35-01555/CL16546-us-central-9352572-32f8e06d-4c8d-4938-9c3d-8204647b4834.mp4",
+          "https://www.teletrax.com/clientvideos/CL16546/2024-09-19/AE16546-2024-38-05865/CL16546-us-west-17004377-30ecc575-76ac-491b-8301-90a573b9d9ee.mp4"
+        ],
+        "num_unique_values": 7,
+        "semantic_type": "url",
+        "description": "URL link to the video file of the advertisement."
+      }
+    },
+    {
+      "column": "impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 7,
+        "min": 6,
+        "max": 30,
+        "samples": [
+          9,
+          8,
+          6
+        ],
+        "num_unique_values": 6,
+        "semantic_type": "number",
+        "description": "The number of times the advertisement was displayed to viewers."
+      }
+    },
+    {
+      "column": "reach",
+      "properties": {
+        "dtype": "number",
+        "std": 3,
+        "min": 6,
+        "max": 18,
+        "samples": [
+          8,
+          6,
+          18
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "number",
+        "description": "The number of unique viewers who saw the advertisement."
+      }
+    },
+    {
+      "column": "frequency",
+      "properties": {
+        "dtype": "number",
+        "std": 0.24907235301622108,
+        "min": 1.0,
+        "max": 1.6666666666666667,
+        "samples": [
+          1.0,
+          1.6666666666666667,
+          1.5
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "number",
+        "description": "The average number of times a unique viewer saw the advertisement."
+      }
+    },
+    {
+      "column": "brand_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "1-800-Hansons"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "company",
+        "description": "The name of the brand being advertised."
+      }
+    },
+    {
+      "column": "duration",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "7_days"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "duration",
+        "description": "The time period over which the advertisement data was collected."
+      }
+    }
+  ],
+  "field_names": [
+    "tv_type",
+    "region",
+    "ad_name",
+    "ad_duration",
+    "product",
+    "category",
+    "first_aired",
+    "last_aired",
+    "thumbnail_link",
+    "video_link",
+    "impressions",
+    "reach",
+    "frequency",
+    "brand_name",
+    "duration"
+  ]
+}

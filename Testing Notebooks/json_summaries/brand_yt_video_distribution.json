@@ -1,0 +1,163 @@
+{
+  "name": "brand_yt_video_distribution",
+  "file_name": "brand_yt_video_distribution",
+  "dataset_description": "This dataset contains information about YouTube video distribution for the Clif Bar brand. It includes metrics such as views, spend estimates, and channel details for various video campaigns.",
+  "fields": [
+    {
+      "column": "region",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "National"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "location",
+        "description": "The geographical scope of the video distribution, in this case, National."
+      }
+    },
+    {
+      "column": "video_name",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "CLIF Bar| The Frances Tiafoe Fund: Fueling Dreams into Reality",
+          "CLIF Bar | Raise Your Bar | Circles",
+          "The Story of Clif Bar"
+        ],
+        "num_unique_values": 8,
+        "semantic_type": "title",
+        "description": "The title or name of the YouTube video."
+      }
+    },
+    {
+      "column": "total_views",
+      "properties": {
+        "dtype": "number",
+        "std": 4296725,
+        "min": 2241819,
+        "max": 14703055,
+        "samples": [
+          9669297,
+          5860046,
+          14703055
+        ],
+        "num_unique_values": 8,
+        "semantic_type": "count",
+        "description": "The total number of views for each video, including both paid and organic views."
+      }
+    },
+    {
+      "column": "paid_views",
+      "properties": {
+        "dtype": "number",
+        "std": 2502027,
+        "min": 984109,
+        "max": 9455940,
+        "samples": [
+          5722904,
+          5860046,
+          5943765
+        ],
+        "num_unique_values": 8,
+        "semantic_type": "count",
+        "description": "The number of views generated through paid advertising or promotion."
+      }
+    },
+    {
+      "column": "organic_views",
+      "properties": {
+        "dtype": "number",
+        "std": 3569604,
+        "min": 0,
+        "max": 8759290,
+        "samples": [
+          3946393,
+          1397946,
+          8759290
+        ],
+        "num_unique_values": 4,
+        "semantic_type": "count",
+        "description": "The number of views generated organically, without paid promotion."
+      }
+    },
+    {
+      "column": "spend_estimate",
+      "properties": {
+        "dtype": "number",
+        "std": 150121.66229201516,
+        "min": 59046.54,
+        "max": 567356.38,
+        "samples": [
+          343374.25,
+          351602.75,
+          356625.91
+        ],
+        "num_unique_values": 8,
+        "semantic_type": "currency",
+        "description": "The estimated amount spent on advertising or promoting the video."
+      }
+    },
+    {
+      "column": "brand_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "clif bar"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "company",
+        "description": "The name of the brand associated with the videos, in this case, Clif Bar."
+      }
+    },
+    {
+      "column": "channel_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Clif Bar",
+          "all"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "channel",
+        "description": "The name of the YouTube channel where the video is hosted."
+      }
+    },
+    {
+      "column": "channel_id",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "UC6BC8HFVE35FtKFg-7i-HSQ",
+          "all"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "id",
+        "description": "The unique identifier for the YouTube channel."
+      }
+    },
+    {
+      "column": "duration",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "30_days"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "timeframe",
+        "description": "The time period over which the data was collected, in this case, 30 days."
+      }
+    }
+  ],
+  "field_names": [
+    "region",
+    "video_name",
+    "total_views",
+    "paid_views",
+    "organic_views",
+    "spend_estimate",
+    "brand_name",
+    "channel_name",
+    "channel_id",
+    "duration"
+  ]
+}

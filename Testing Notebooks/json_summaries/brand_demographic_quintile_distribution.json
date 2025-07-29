@@ -1,0 +1,126 @@
+{
+  "name": "brand_demographic_quintile_distribution",
+  "file_name": "brand_demographic_quintile_distribution",
+  "dataset_description": "This dataset provides a detailed breakdown of brand advertising impressions across different TV types, regions, income segments, and demographic quintiles. It offers insights into the distribution of ad impressions for a specific brand over a 7-day period, allowing for analysis of targeting effectiveness and audience reach across various demographic and geographic segments.",
+  "fields": [
+    {
+      "column": "tv_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Traditional TV",
+          "Traditional TV + OTT",
+          "OTT"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "platform",
+        "description": "The type of television platform on which the ad was shown, including Linear TV (Traditional TV) and Connected TV (OTT)."
+      }
+    },
+    {
+      "column": "region",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "Ft. Wayne",
+          "Lansing",
+          "Des Moines-Ames"
+        ],
+        "num_unique_values": 9,
+        "semantic_type": "location",
+        "description": "The geographic region or market where the ad impressions occurred."
+      }
+    },
+    {
+      "column": "quintile",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "Second 20%",
+          "Bottom 20%",
+          "Top 20%"
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "category",
+        "description": "The demographic quintile representing the audience segment, divided into five 20% groups based on the segment type."
+      }
+    },
+    {
+      "column": "segment_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "income"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "category",
+        "description": "The type of demographic segmentation used, in this case, income-based segmentation."
+      }
+    },
+    {
+      "column": "segment_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "200K+",
+          "25K - 49K",
+          "Less than 25K"
+        ],
+        "num_unique_values": 4,
+        "semantic_type": "income",
+        "description": "The specific income range for the audience segment."
+      }
+    },
+    {
+      "column": "impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 6756,
+        "min": 11,
+        "max": 18440,
+        "samples": [
+          2455,
+          14575,
+          18440
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "number",
+        "description": "The number of ad impressions delivered to the specific audience segment and region."
+      }
+    },
+    {
+      "column": "brand_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "1-800-Hansons"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "company",
+        "description": "The name of the brand for which the ad impressions data is collected."
+      }
+    },
+    {
+      "column": "duration",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "7_days"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "timeframe",
+        "description": "The time period over which the impression data was collected, in this case, 7 days."
+      }
+    }
+  ],
+  "field_names": [
+    "tv_type",
+    "region",
+    "quintile",
+    "segment_type",
+    "segment_name",
+    "impressions",
+    "brand_name",
+    "duration"
+  ]
+}

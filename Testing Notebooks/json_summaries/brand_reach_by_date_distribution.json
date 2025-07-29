@@ -1,0 +1,108 @@
+{
+  "name": "brand_reach_by_date_distribution",
+  "file_name": "brand_reach_by_date_distribution",
+  "dataset_description": "This dataset provides daily brand reach and engagement metrics across different regions for the Midea brand. It includes information on impressions, reach, and frequency of ad exposures, allowing for analysis of advertising effectiveness and audience distribution over time and geography.",
+  "fields": [
+    {
+      "column": "date",
+      "properties": {
+        "dtype": "date",
+        "min": "2025-02-10",
+        "max": "2025-03-08",
+        "samples": [
+          "2025-03-02",
+          "2025-02-10",
+          "2025-02-17"
+        ],
+        "num_unique_values": 7,
+        "semantic_type": "date",
+        "description": "The date of the recorded metrics, ranging from February 10, 2025 to March 8, 2025"
+      }
+    },
+    {
+      "column": "region",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "La Crosse-Eau Claire",
+          "Binghamton",
+          "Des Moines-Ames"
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "location",
+        "description": "The designated market area (DMA) or region where the advertising metrics were measured"
+      }
+    },
+    {
+      "column": "impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 1523,
+        "min": 344,
+        "max": 5658,
+        "samples": [
+          1313,
+          381,
+          1907
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "number",
+        "description": "The total number of times an ad was displayed to viewers in the specified region and date"
+      }
+    },
+    {
+      "column": "reach",
+      "properties": {
+        "dtype": "number",
+        "std": 892,
+        "min": 181,
+        "max": 3320,
+        "samples": [
+          717,
+          269,
+          1054
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "number",
+        "description": "The number of unique viewers who saw the ad at least once in the specified region and date"
+      }
+    },
+    {
+      "column": "frequency",
+      "properties": {
+        "dtype": "number",
+        "std": 0.17388241867063908,
+        "min": 1.4137931034482758,
+        "max": 2.1020408163265305,
+        "samples": [
+          1.8314606741573034,
+          1.4137931034482758,
+          1.8095238095238095
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "number",
+        "description": "The average number of times a unique viewer saw the ad in the specified region and date"
+      }
+    },
+    {
+      "column": "brand_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Midea"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "company",
+        "description": "The name of the brand being advertised, in this case, Midea"
+      }
+    }
+  ],
+  "field_names": [
+    "date",
+    "region",
+    "impressions",
+    "reach",
+    "frequency",
+    "brand_name"
+  ]
+}

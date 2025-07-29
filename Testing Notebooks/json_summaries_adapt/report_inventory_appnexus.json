@@ -1,0 +1,699 @@
+{
+  "name": "AppNexus Inventory Report",
+  "file_name": "report_inventory_appnexus",
+  "dataset_description": "This dataset provides a detailed breakdown of inventory performance within the AppNexus (now Xandr) platform. It includes metrics related to impressions, clicks, conversions, and spend, segmented by various dimensions such as site domain, creative, campaign, and geography. This report is useful for analyzing ad performance, optimizing campaigns, and understanding inventory sources.",
+  "fields": [
+    {
+      "column": "site_domain",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "msn.com",
+          "kongregate.com",
+          "hfboards.com"
+        ],
+        "num_unique_values": 56,
+        "semantic_type": "domain",
+        "description": "The domain name of the website where the ad was served."
+      }
+    },
+    {
+      "column": "tag_id",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "29396944",
+          "15962224",
+          "6938212"
+        ],
+        "num_unique_values": 54,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the ad placement or ad slot on the website."
+      }
+    },
+    {
+      "column": "deal_id",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "1696384",
+          "2110702",
+          "1926218"
+        ],
+        "num_unique_values": 53,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the programmatic deal used to serve the ad. Represents a pre-negotiated agreement between buyer and seller."
+      }
+    },
+    {
+      "column": "creative_id",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "435328580",
+          "306428189"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the ad creative."
+      }
+    },
+    {
+      "column": "creative_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "STI-Display-Conversion-Value 1-iC DTC Value 01-75 Plus Brands-160x600_230428_DCM_365846875",
+          "UPenn_EMS-3245_Certificates_728x90_8.13.21_InApp.jpg"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "name",
+        "description": "The name of the ad creative."
+      }
+    },
+    {
+      "column": "width",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "160",
+          "728"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "number",
+        "description": "The width of the ad creative in pixels."
+      }
+    },
+    {
+      "column": "height",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "600",
+          "90"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "number",
+        "description": "The height of the ad creative in pixels."
+      }
+    },
+    {
+      "column": "insertion_order_id",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "4604773",
+          "10636638"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the insertion order, which represents a high-level advertising agreement."
+      }
+    },
+    {
+      "column": "insertion_order_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "STI Tech ASZ - DTC - 2020/21/22/23/24",
+          "EDDY - University of Pennsylvania - Display AV"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "name",
+        "description": "The name of the insertion order."
+      }
+    },
+    {
+      "column": "campaign_id",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "275398210",
+          "0"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the advertising campaign."
+      }
+    },
+    {
+      "column": "campaign_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "3.1 - MW LP - 1D Recency",
+          "Dummy"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "name",
+        "description": "The name of the advertising campaign."
+      }
+    },
+    {
+      "column": "seller_member_id",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "280",
+          "10618",
+          "15127"
+        ],
+        "num_unique_values": 22,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the seller member (publisher) within the AppNexus platform."
+      }
+    },
+    {
+      "column": "seller_member_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Microsoft Advertising Exchange",
+          "RND RedaktionsNetzwerk Deutschland GmbH",
+          "Online Media Solutions Ltd."
+        ],
+        "num_unique_values": 22,
+        "semantic_type": "company",
+        "description": "The name of the seller member (publisher) within the AppNexus platform."
+      }
+    },
+    {
+      "column": "publisher_id",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "1235904",
+          "2182447",
+          "2494512"
+        ],
+        "num_unique_values": 50,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the publisher."
+      }
+    },
+    {
+      "column": "geo_country",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "CA",
+          "US"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "country",
+        "description": "The country where the ad was served, based on the user's IP address."
+      }
+    },
+    {
+      "column": "advertiser_id",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "2263702",
+          "4777646"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the advertiser."
+      }
+    },
+    {
+      "column": "advertiser_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "STI Technologies c/o Time and Space",
+          "University of Pennsylvania Online c/o Education Dynamics"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "company",
+        "description": "The name of the advertiser."
+      }
+    },
+    {
+      "column": "lineitem_id",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "26999467",
+          "18250912",
+          "27392574"
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the line item, which represents a specific targeting and bidding strategy within the insertion order."
+      }
+    },
+    {
+      "column": "lineitem_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "EDDY - University of Pennsylvania - Display - Mobile",
+          "STI Tech ASZ - DTC - 2020 - RT - 1 -  Landing Page (Tablet)",
+          "EDDY - University of Pennsylvania - Display - Mobile CTR"
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "name",
+        "description": "The name of the line item."
+      }
+    },
+    {
+      "column": "pixel_id",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "0"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "identifier",
+        "description": "The unique identifier for the tracking pixel."
+      }
+    },
+    {
+      "column": "pixel_name",
+      "properties": {
+        "dtype": "date",
+        "min": null,
+        "max": null,
+        "samples": [],
+        "num_unique_values": 0,
+        "semantic_type": "name",
+        "description": "The name of the tracking pixel."
+      },
+      "nullable": true
+    },
+    {
+      "column": "supply_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "1",
+          "0"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "type",
+        "description": "Indicates the type of supply source (e.g., direct, exchange)."
+      },
+      "nullable": true
+    },
+    {
+      "column": "dayserial_numeric",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 20241222,
+        "max": 20241222,
+        "samples": [
+          20241222
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "date",
+        "description": "The date of the data in YYYYMMDD format."
+      }
+    },
+    {
+      "column": "impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 1,
+        "max": 5,
+        "samples": [
+          2,
+          4,
+          1
+        ],
+        "num_unique_values": 4,
+        "semantic_type": "number",
+        "description": "The number of ad impressions served."
+      }
+    },
+    {
+      "column": "above_fold_imps",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 0,
+        "max": 1,
+        "samples": [
+          1,
+          0
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "number",
+        "description": "The number of impressions served above the fold (visible without scrolling)."
+      }
+    },
+    {
+      "column": "below_fold_imps",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 0,
+        "max": 5,
+        "samples": [
+          1,
+          4,
+          5
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "number",
+        "description": "The number of impressions served below the fold (requiring scrolling to be visible)."
+      }
+    },
+    {
+      "column": "fold_unknown_imps",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 0,
+        "max": 2,
+        "samples": [
+          1,
+          0,
+          2
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "number",
+        "description": "The number of impressions where the fold position (above or below) is unknown."
+      }
+    },
+    {
+      "column": "clicks",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 0,
+        "max": 0,
+        "samples": [
+          0
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "number",
+        "description": "The number of clicks on the ad."
+      }
+    },
+    {
+      "column": "pvconversions",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 0,
+        "max": 0,
+        "samples": [
+          0
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "number",
+        "description": "The number of post-view conversions (conversions that occur after a user views the ad but does not click). Often used in CTV/OTT campaigns."
+      }
+    },
+    {
+      "column": "pcconversions",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 0,
+        "max": 0,
+        "samples": [
+          0
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "number",
+        "description": "The number of post-click conversions (conversions that occur after a user clicks on the ad)."
+      }
+    },
+    {
+      "column": "buyer_spend",
+      "properties": {
+        "dtype": "number",
+        "std": 0.002148808702892929,
+        "min": 0.0005652700000000001,
+        "max": 0.020868929999999997,
+        "samples": [
+          0.00077395,
+          0.00094463,
+          0.00144071
+        ],
+        "num_unique_values": 77,
+        "semantic_type": "currency",
+        "description": "The amount of money spent by the buyer (advertiser) on the ad impressions."
+      }
+    },
+    {
+      "column": "buyer_bid",
+      "properties": {
+        "dtype": "number",
+        "std": 0.002130467154277929,
+        "min": 0.0005949132915073701,
+        "max": 0.02086986559806039,
+        "samples": [
+          0.0011300005422999943,
+          0.00099663348835017,
+          0.00206000098859999
+        ],
+        "num_unique_values": 19,
+        "semantic_type": "currency",
+        "description": "The bid price submitted by the buyer (advertiser) for the ad impression."
+      }
+    },
+    {
+      "column": "eap",
+      "properties": {
+        "dtype": "number",
+        "std": 2.0949858028506627,
+        "min": 0.1599999964237213,
+        "max": 12.020000338554382,
+        "samples": [
+          1.2400000095367432,
+          0.47999998927116394,
+          1.4199999570846558
+        ],
+        "num_unique_values": 69,
+        "semantic_type": "number",
+        "description": "Estimated Available Premium. Represents the potential premium inventory available."
+      }
+    },
+    {
+      "column": "ecp",
+      "properties": {
+        "dtype": "number",
+        "std": 7.564738295703727,
+        "min": 1.0499999523162842,
+        "max": 43.519999504089355,
+        "samples": [
+          8.710000038146973,
+          4.340000152587891,
+          3.9600000381469727
+        ],
+        "num_unique_values": 71,
+        "semantic_type": "number",
+        "description": "Estimated Clearing Price. Represents the estimated price at which the inventory will be sold."
+      }
+    },
+    {
+      "column": "post_click_revenue",
+      "properties": {
+        "dtype": "number",
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "samples": [
+          0.0
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "currency",
+        "description": "The revenue generated from post-click conversions."
+      }
+    },
+    {
+      "column": "post_view_revenue",
+      "properties": {
+        "dtype": "number",
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "samples": [
+          0.0
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "currency",
+        "description": "The revenue generated from post-view conversions."
+      }
+    },
+    {
+      "column": "appnexus_views",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 0,
+        "max": 4,
+        "samples": [
+          0,
+          3,
+          4
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "number",
+        "description": "The number of views recorded by AppNexus's viewability measurement."
+      }
+    },
+    {
+      "column": "appnexus_outofviews",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 0,
+        "max": 2,
+        "samples": [
+          0,
+          1,
+          2
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "number",
+        "description": "The number of impressions deemed out-of-view by AppNexus's viewability measurement."
+      }
+    },
+    {
+      "column": "dt",
+      "properties": {
+        "dtype": "date",
+        "min": "2024-12-22",
+        "max": "2024-12-22",
+        "samples": [
+          "2024-12-22"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "date",
+        "description": "The date of the data in YYYY-MM-DD format."
+      }
+    },
+    {
+      "column": "monthname",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "December"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "date",
+        "description": "The name of the month."
+      }
+    },
+    {
+      "column": "week_of_month",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Week 4"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "date",
+        "description": "The week of the month."
+      }
+    },
+    {
+      "column": "category",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Healthcare & Medical",
+          "Education"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "category",
+        "description": "The category of the website or content where the ad was served."
+      }
+    },
+    {
+      "column": "subcategory",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Unknown",
+          "\\N"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "category",
+        "description": "The subcategory of the website or content where the ad was served."
+      }
+    },
+    {
+      "column": "dsp_filter",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "appnexus"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "company",
+        "description": "Indicates that the data is from the AppNexus DSP (Demand-Side Platform)."
+      },
+      "nullable": true
+    },
+    {
+      "column": "day_numeric",
+      "properties": {
+        "dtype": "number",
+        "std": 0,
+        "min": 20241222,
+        "max": 20241222,
+        "samples": [
+          20241222
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "date",
+        "description": "The date of the data in YYYYMMDD format."
+      }
+    }
+  ],
+  "field_names": [
+    "site_domain",
+    "tag_id",
+    "deal_id",
+    "creative_id",
+    "creative_name",
+    "width",
+    "height",
+    "insertion_order_id",
+    "insertion_order_name",
+    "campaign_id",
+    "campaign_name",
+    "seller_member_id",
+    "seller_member_name",
+    "publisher_id",
+    "geo_country",
+    "advertiser_id",
+    "advertiser_name",
+    "lineitem_id",
+    "lineitem_name",
+    "pixel_id",
+    "pixel_name",
+    "supply_type",
+    "dayserial_numeric",
+    "impressions",
+    "above_fold_imps",
+    "below_fold_imps",
+    "fold_unknown_imps",
+    "clicks",
+    "pvconversions",
+    "pcconversions",
+    "buyer_spend",
+    "buyer_bid",
+    "eap",
+    "ecp",
+    "post_click_revenue",
+    "post_view_revenue",
+    "appnexus_views",
+    "appnexus_outofviews",
+    "dt",
+    "monthname",
+    "week_of_month",
+    "category",
+    "subcategory",
+    "dsp_filter",
+    "day_numeric"
+  ]
+}

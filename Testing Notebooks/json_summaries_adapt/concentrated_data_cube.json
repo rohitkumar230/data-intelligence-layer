@@ -1,0 +1,452 @@
+{
+  "name": "Concentrated Data Cube for Ad Campaign Performance",
+  "file_name": "concentrated_data_cube",
+  "dataset_description": "This dataset provides a comprehensive view of ad campaign performance across various dimensions including verticals, geographies, devices, and media solutions. It contains metrics such as impressions, clicks, conversions, and revenue, allowing for detailed analysis of advertising effectiveness and ROI.",
+  "fields": [
+    {
+      "column": "vertical",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Retail & eTail",
+          "Unknown",
+          "Government"
+        ],
+        "num_unique_values": 18,
+        "semantic_type": "industry",
+        "description": "The broad industry category of the advertiser"
+      }
+    },
+    {
+      "column": "sub_vertical",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Public Health",
+          "Automobile Parts",
+          "Health Tech"
+        ],
+        "num_unique_values": 34,
+        "semantic_type": "industry",
+        "description": "A more specific industry category within the main vertical"
+      }
+    },
+    {
+      "column": "creative_size",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "1x1",
+          "300x250",
+          "640x640"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "dimension",
+        "description": "The dimensions of the ad creative in pixels"
+      }
+    },
+    {
+      "column": "country",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "United States"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "country",
+        "description": "The country where the ad was served"
+      }
+    },
+    {
+      "column": "geo_region",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "South Dakota",
+          "Oregon",
+          "Vermont"
+        ],
+        "num_unique_values": 51,
+        "semantic_type": "state",
+        "description": "The state or region within the country where the ad was served"
+      }
+    },
+    {
+      "column": "city",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Cudahy",
+          "Pompton Plains",
+          "Thayne"
+        ],
+        "num_unique_values": 11508,
+        "semantic_type": "city",
+        "description": "The city where the ad was served"
+      }
+    },
+    {
+      "column": "zip_code",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "89031",
+          "32204",
+          "33140"
+        ],
+        "num_unique_values": 8822,
+        "semantic_type": "zip",
+        "description": "The ZIP code where the ad was served"
+      }
+    },
+    {
+      "column": "os",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "iPadOS",
+          "PlayStation",
+          "Tizen"
+        ],
+        "num_unique_values": 28,
+        "semantic_type": "os",
+        "description": "The operating system of the device on which the ad was served"
+      }
+    },
+    {
+      "column": "browser",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Chrome",
+          "Safari",
+          "Firefox"
+        ],
+        "num_unique_values": 18,
+        "semantic_type": "browser",
+        "description": "The web browser used to view the ad"
+      }
+    },
+    {
+      "column": "device_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "phone",
+          "pc",
+          "tv"
+        ],
+        "num_unique_values": 7,
+        "semantic_type": "device",
+        "description": "The type of device on which the ad was served"
+      }
+    },
+    {
+      "column": "site",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GloftGGHM",
+          "wmgk.com",
+          "play.google.com/store/apps/details?id=com.unicostudio.wordgameturkish"
+        ],
+        "num_unique_values": 175,
+        "semantic_type": "url",
+        "description": "The website or app where the ad was displayed"
+      }
+    },
+    {
+      "column": "media_solution",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Advanced TV",
+          "Multi-solution",
+          "Time & Place"
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "strategy",
+        "description": "The type of media solution used for ad delivery"
+      }
+    },
+    {
+      "column": "creative_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Client provided creative",
+          "Audio built by MiQ",
+          "Multi-creative"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "category",
+        "description": "The source or type of creative used in the ad"
+      }
+    },
+    {
+      "column": "channel",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Audio"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "channel",
+        "description": "The advertising channel used for the campaign"
+      }
+    },
+    {
+      "column": "dsp",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Appnexus"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "platform",
+        "description": "The Demand-Side Platform used for ad buying"
+      }
+    },
+    {
+      "column": "day_of_week",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Monday",
+          "Sunday",
+          "Saturday"
+        ],
+        "num_unique_values": 7,
+        "semantic_type": "day",
+        "description": "The day of the week when the ad was served"
+      }
+    },
+    {
+      "column": "time_of_day",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "07",
+          "04",
+          "06"
+        ],
+        "num_unique_values": 24,
+        "semantic_type": "hour",
+        "description": "The hour of the day when the ad was served"
+      }
+    },
+    {
+      "column": "impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 50.69979606075576,
+        "min": 0.0,
+        "max": 12308.0,
+        "samples": [
+          44.0,
+          9.0,
+          124.0
+        ],
+        "num_unique_values": 247,
+        "semantic_type": "count",
+        "description": "The number of times the ad was displayed"
+      }
+    },
+    {
+      "column": "clicks",
+      "properties": {
+        "dtype": "number",
+        "std": 0.06432307968697931,
+        "min": 0.0,
+        "max": 4.0,
+        "samples": [
+          1.0,
+          4.0,
+          2.0
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "count",
+        "description": "The number of times the ad was clicked"
+      }
+    },
+    {
+      "column": "conversions",
+      "properties": {
+        "dtype": "number",
+        "std": 0.13562552845919343,
+        "min": 0.0,
+        "max": 44.0,
+        "samples": [
+          0.0,
+          3.0,
+          21.0
+        ],
+        "num_unique_values": 19,
+        "semantic_type": "count",
+        "description": "The number of conversions attributed to the ad"
+      }
+    },
+    {
+      "column": "viewable_impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "samples": [
+          0.0
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "count",
+        "description": "The number of impressions that were viewable"
+      }
+    },
+    {
+      "column": "measurable_impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "samples": [
+          0.0
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "count",
+        "description": "The number of impressions that were measurable"
+      }
+    },
+    {
+      "column": "total_media_cost",
+      "properties": {
+        "dtype": "number",
+        "std": 0.33396277396243584,
+        "min": 0.0,
+        "max": 79.10846244000972,
+        "samples": [
+          0.00856145,
+          0.029720669999999998,
+          0.01881582
+        ],
+        "num_unique_values": 45852,
+        "semantic_type": "currency",
+        "description": "The total cost of media for the ad campaign"
+      }
+    },
+    {
+      "column": "video_starts",
+      "properties": {
+        "dtype": "number",
+        "std": 50.66883992617441,
+        "min": 0.0,
+        "max": 12308.0,
+        "samples": [
+          53.0,
+          1011.0,
+          82.0
+        ],
+        "num_unique_values": 236,
+        "semantic_type": "count",
+        "description": "The number of times a video ad started playing"
+      }
+    },
+    {
+      "column": "completed_video_views",
+      "properties": {
+        "dtype": "number",
+        "std": 50.611512332390916,
+        "min": 0.0,
+        "max": 12308.0,
+        "samples": [
+          21.0,
+          5.0,
+          6568.0
+        ],
+        "num_unique_values": 239,
+        "semantic_type": "count",
+        "description": "The number of times a video ad was viewed to completion"
+      }
+    },
+    {
+      "column": "total_revenue",
+      "properties": {
+        "dtype": "number",
+        "std": 0.9370299484949755,
+        "min": 0.0,
+        "max": 212.3864040002254,
+        "samples": [
+          0.16201386332146195,
+          0.20458851431384947,
+          0.12339976173010296
+        ],
+        "num_unique_values": 67898,
+        "semantic_type": "currency",
+        "description": "The total revenue generated from the ad campaign"
+      }
+    },
+    {
+      "column": "margin_value",
+      "properties": {
+        "dtype": "number",
+        "std": 0.48047922604191373,
+        "min": 0.0,
+        "max": 119.4902642794581,
+        "samples": [
+          0.22625837866104737,
+          0.018150791806468648,
+          0.017681464306056105
+        ],
+        "num_unique_values": 68013,
+        "semantic_type": "currency",
+        "description": "The profit margin value for the ad campaign"
+      }
+    },
+    {
+      "column": "client_conversion",
+      "properties": {
+        "dtype": "number",
+        "std": 0.3607818416055837,
+        "min": 0.0,
+        "max": 156.28488372093022,
+        "samples": [
+          3.9669421487603307,
+          2.4246737841043893,
+          23.6068129330254
+        ],
+        "num_unique_values": 39,
+        "semantic_type": "rate",
+        "description": "The conversion rate as defined by the client"
+      }
+    }
+  ],
+  "field_names": [
+    "vertical",
+    "sub_vertical",
+    "creative_size",
+    "country",
+    "geo_region",
+    "city",
+    "zip_code",
+    "os",
+    "browser",
+    "device_type",
+    "site",
+    "media_solution",
+    "creative_type",
+    "channel",
+    "dsp",
+    "day_of_week",
+    "time_of_day",
+    "impressions",
+    "clicks",
+    "conversions",
+    "viewable_impressions",
+    "measurable_impressions",
+    "total_media_cost",
+    "video_starts",
+    "completed_video_views",
+    "total_revenue",
+    "margin_value",
+    "client_conversion"
+  ]
+}

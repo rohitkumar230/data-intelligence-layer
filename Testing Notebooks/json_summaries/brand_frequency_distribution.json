@@ -1,0 +1,152 @@
+{
+  "name": "brand_frequency_distribution",
+  "file_name": "brand_frequency_distribution",
+  "dataset_description": "This dataset provides a comprehensive analysis of brand advertising frequency distribution across different TV types, regions, and audience segments. It includes metrics such as impressions, reach, and frequency for a specific brand over a 30-day period.",
+  "fields": [
+    {
+      "column": "tv_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "OTT",
+          "Traditional TV",
+          "Traditional TV + OTT"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "platform",
+        "description": "The type of TV platform where the advertisement was shown, including OTT (Over-The-Top), Traditional TV, or a combination of both."
+      }
+    },
+    {
+      "column": "quintile",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "Top 20%",
+          "Bottom 20%",
+          "Second 20%"
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "segment",
+        "description": "The audience segment divided into quintiles based on exposure to the brand's advertisements."
+      }
+    },
+    {
+      "column": "region",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Minneapolis-St. Paul",
+          "Anchorage",
+          "Miami-Ft. Lauderdale"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "location",
+        "description": "The geographic region or Designated Market Area (DMA) where the advertisements were shown."
+      }
+    },
+    {
+      "column": "frequency",
+      "properties": {
+        "dtype": "number",
+        "std": 7.151942053387924,
+        "min": 1.0,
+        "max": 24.293478260869566,
+        "samples": [
+          1.0108695652173914,
+          24.293478260869566,
+          2.5
+        ],
+        "num_unique_values": 7,
+        "semantic_type": "number",
+        "description": "The average number of times a viewer in the segment was exposed to the brand's advertisements."
+      }
+    },
+    {
+      "column": "impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 5487,
+        "min": 21,
+        "max": 17880,
+        "samples": [
+          17880,
+          21,
+          744
+        ],
+        "num_unique_values": 8,
+        "semantic_type": "number",
+        "description": "The total number of times the brand's advertisements were displayed to viewers in the segment."
+      }
+    },
+    {
+      "column": "reach",
+      "properties": {
+        "dtype": "number",
+        "std": 297,
+        "min": 8,
+        "max": 736,
+        "samples": [
+          736,
+          8,
+          392
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "number",
+        "description": "The number of unique viewers who were exposed to the brand's advertisements in the segment."
+      }
+    },
+    {
+      "column": "percent_imps",
+      "properties": {
+        "dtype": "number",
+        "std": 24.434194187453077,
+        "min": 2.7963525835866263,
+        "max": 67.93313069908815,
+        "samples": [
+          4.368871788506888,
+          67.93313069908815,
+          50.0
+        ],
+        "num_unique_values": 9,
+        "semantic_type": "percentage",
+        "description": "The percentage of total impressions delivered to each segment."
+      }
+    },
+    {
+      "column": "brand_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "1-800-Hansons"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "company",
+        "description": "The name of the brand being advertised."
+      }
+    },
+    {
+      "column": "duration",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "30_days"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "timeframe",
+        "description": "The time period over which the advertising data was collected and analyzed."
+      }
+    }
+  ],
+  "field_names": [
+    "tv_type",
+    "quintile",
+    "region",
+    "frequency",
+    "impressions",
+    "reach",
+    "percent_imps",
+    "brand_name",
+    "duration"
+  ]
+}

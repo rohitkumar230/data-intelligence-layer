@@ -1,0 +1,147 @@
+{
+  "name": "brand_ott_entity_distribution",
+  "file_name": "brand_ott_entity_distribution",
+  "dataset_description": "This dataset provides information on the distribution of Over-The-Top (OTT) advertising impressions across different regions, devices, and entities for a specific brand. It includes metrics such as impressions, reach, and frequency for various OTT platforms and devices.",
+  "fields": [
+    {
+      "column": "region",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "Palm Springs",
+          "San Antonio",
+          "Fargo"
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "city",
+        "description": "The city or metropolitan area where the OTT advertising impressions were delivered."
+      }
+    },
+    {
+      "column": "entity_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Device"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "category",
+        "description": "The type of entity being measured, in this case, it's specifically for devices."
+      }
+    },
+    {
+      "column": "entity_name",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "Smart TVs",
+          "Nintendo Switch",
+          "Amazon_Fire"
+        ],
+        "num_unique_values": 6,
+        "semantic_type": "device",
+        "description": "The specific name or brand of the OTT device or platform."
+      }
+    },
+    {
+      "column": "device_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Smart TVs",
+          "Gaming Consoles",
+          "Streaming Sticks"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "category",
+        "description": "The category of the OTT device used for content consumption and ad delivery."
+      }
+    },
+    {
+      "column": "impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 806,
+        "min": 7,
+        "max": 2583,
+        "samples": [
+          2583,
+          7,
+          8
+        ],
+        "num_unique_values": 7,
+        "semantic_type": "number",
+        "description": "The total number of times the ad was displayed on the OTT device or platform."
+      }
+    },
+    {
+      "column": "reach",
+      "properties": {
+        "dtype": "number",
+        "std": 94,
+        "min": 7,
+        "max": 297,
+        "samples": [
+          297,
+          7,
+          129
+        ],
+        "num_unique_values": 6,
+        "semantic_type": "number",
+        "description": "The number of unique users who saw the ad at least once on the OTT device or platform."
+      }
+    },
+    {
+      "column": "frequency",
+      "properties": {
+        "dtype": "number",
+        "std": 4.275004873291569,
+        "min": 1.0,
+        "max": 13.0,
+        "samples": [
+          8.7,
+          1.0,
+          13.0
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "number",
+        "description": "The average number of times a unique user saw the ad on the OTT device or platform."
+      }
+    },
+    {
+      "column": "brand_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "1-800-Hansons"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "company",
+        "description": "The name of the brand for which the OTT advertising campaign was run."
+      }
+    },
+    {
+      "column": "duration",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "7_days"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "timeframe",
+        "description": "The time period over which the OTT advertising data was collected and analyzed."
+      }
+    }
+  ],
+  "field_names": [
+    "region",
+    "entity_type",
+    "entity_name",
+    "device_type",
+    "impressions",
+    "reach",
+    "frequency",
+    "brand_name",
+    "duration"
+  ]
+}

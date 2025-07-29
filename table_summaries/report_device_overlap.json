@@ -1,0 +1,256 @@
+{
+    "name": "report_device_overlap",
+    "file_name": "report_device_overlap",
+    "dataset_description": "This dataset provides information on device overlap for various advertisers, segments, and device types. It includes conversion metrics and device-specific details, allowing for analysis of advertising performance across different devices and segments.",
+    "fields": [
+        {
+            "column": "geo_country",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "US"
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "country",
+                "description": "The country where the data is collected, represented by its ISO country code."
+            }
+        },
+        {
+            "column": "advertiser_id",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "1787339",
+                    "7733315",
+                    "3285490"
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "id",
+                "description": "Unique identifier for each advertiser in the dataset."
+            }
+        },
+        {
+            "column": "advertiser_name",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Hyatt c/o Performics - Chicago",
+                    "Political US",
+                    "Symantec c/o Initiative LA"
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "company",
+                "description": "Name of the advertiser or advertising agency responsible for the campaign."
+            }
+        },
+        {
+            "column": "segment_id",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "8589845",
+                    "33576801",
+                    "19408155"
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "id",
+                "description": "Unique identifier for each audience segment targeted in the campaign."
+            }
+        },
+        {
+            "column": "segment_name",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Hyatt - Universal Site Pixel - Advanced - Secure IMG",
+                    "L2 - General Election 2/4+",
+                    "Norton - Symantec Checkout Steps"
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "category",
+                "description": "Descriptive name of the audience segment targeted in the campaign."
+            }
+        },
+        {
+            "column": "device_type",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "pc",
+                    "phone"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "device",
+                "description": "Type of device used to view the advertisement (e.g., PC, phone)."
+            }
+        },
+        {
+            "column": "device_model_id",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "301",
+                    "111751",
+                    "0"
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "id",
+                "description": "Unique identifier for the specific device model."
+            }
+        },
+        {
+            "column": "device_model_name",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "iPhone",
+                    "SM-S928U",
+                    "Unknown"
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "model",
+                "description": "Name or model number of the device used to view the advertisement."
+            }
+        },
+        {
+            "column": "device_make_name",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Apple",
+                    "Samsung",
+                    "Unknown"
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "brand",
+                "description": "Brand or manufacturer of the device used to view the advertisement."
+            }
+        },
+        {
+            "column": "converted_count",
+            "properties": {
+                "dtype": "number",
+                "std": 12648,
+                "min": 13582,
+                "max": 39614,
+                "samples": [
+                    39614,
+                    13582,
+                    19332
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "count",
+                "description": "Number of conversions recorded for the given combination of advertiser, segment, and device."
+            }
+        },
+        {
+            "column": "total_count",
+            "properties": {
+                "dtype": "number",
+                "std": 20356252,
+                "min": 450170,
+                "max": 44448051,
+                "samples": [
+                    36989901,
+                    450170,
+                    44448051
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "count",
+                "description": "Total number of impressions or interactions for the given combination of advertiser, segment, and device."
+            }
+        },
+        {
+            "column": "percent_converted",
+            "properties": {
+                "dtype": "number",
+                "std": 1.513857197047462,
+                "min": 0.043493470613593384,
+                "max": 3.0170824355243573,
+                "samples": [
+                    0.10709409576413845,
+                    3.0170824355243573,
+                    0.043493470613593384
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "percentage",
+                "description": "Percentage of total interactions that resulted in a conversion, calculated as (converted_count / total_count) * 100."
+            }
+        },
+        {
+            "column": "dayserial_numeric",
+            "properties": {
+                "dtype": "number",
+                "std": 0,
+                "min": 20250104,
+                "max": 20250104,
+                "samples": [
+                    20250104
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "date",
+                "description": "Date of the report in YYYYMMDD format, representing the day for which the data was collected."
+            }
+        },
+        {
+            "column": "category",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Travel & Tourism",
+                    "US Political & Advocacy 2024",
+                    "Consumer Electronics & Technology"
+                ],
+                "num_unique_values": 3,
+                "semantic_type": "category",
+                "description": "Broad industry category of the advertiser or campaign."
+            }
+        },
+        {
+            "column": "subcategory",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "\\N",
+                    "Hotels"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "category",
+                "description": "Specific subcategory within the broader industry category, if applicable. '\\N' likely represents null or not applicable."
+            }
+        },
+        {
+            "column": "day_numeric",
+            "properties": {
+                "dtype": "number",
+                "std": 0,
+                "min": 20250104,
+                "max": 20250104,
+                "samples": [
+                    20250104
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "date",
+                "description": "Date of the report in YYYYMMDD format, possibly redundant with dayserial_numeric."
+            }
+        }
+    ],
+    "field_names": [
+        "geo_country",
+        "advertiser_id",
+        "advertiser_name",
+        "segment_id",
+        "segment_name",
+        "device_type",
+        "device_model_id",
+        "device_model_name",
+        "device_make_name",
+        "converted_count",
+        "total_count",
+        "percent_converted",
+        "dayserial_numeric",
+        "category",
+        "subcategory",
+        "day_numeric"
+    ]
+}

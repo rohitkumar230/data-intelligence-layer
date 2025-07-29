@@ -1,0 +1,127 @@
+{
+  "name": "brand_ott_entity_quintile_distribution",
+  "file_name": "brand_ott_entity_quintile_distribution",
+  "dataset_description": "This dataset provides a detailed breakdown of OTT (Over-The-Top) advertising performance for a specific brand across different regions, device types, and entities. It segments the data into quintiles, offering insights into impression distribution and performance across various OTT platforms and devices.",
+  "fields": [
+    {
+      "column": "region",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "San Diego",
+          "National",
+          "Reno"
+        ],
+        "num_unique_values": 7,
+        "semantic_type": "location",
+        "description": "Geographic area where the OTT advertising data is collected"
+      }
+    },
+    {
+      "column": "quintile",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Third 20%",
+          "Bottom 20%",
+          "Top 20%"
+        ],
+        "num_unique_values": 4,
+        "semantic_type": "rank",
+        "description": "Performance ranking divided into five equal groups, each representing 20% of the data"
+      }
+    },
+    {
+      "column": "entity_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "App",
+          "Device"
+        ],
+        "num_unique_values": 2,
+        "semantic_type": "category",
+        "description": "Classification of the OTT entity as either an application or a device"
+      }
+    },
+    {
+      "column": "entity_name",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "Smart TVs",
+          "Pluto TV",
+          "OBFUSCATED"
+        ],
+        "num_unique_values": 6,
+        "semantic_type": "name",
+        "description": "Specific name of the OTT entity (app or device)"
+      }
+    },
+    {
+      "column": "device_type",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Smart TVs",
+          "Streaming Sticks",
+          "Gaming Consoles"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "category",
+        "description": "Category of CTV (Connected TV) device used for OTT content consumption"
+      }
+    },
+    {
+      "column": "impressions",
+      "properties": {
+        "dtype": "number",
+        "std": 24,
+        "min": 7,
+        "max": 72,
+        "samples": [
+          54,
+          7,
+          9
+        ],
+        "num_unique_values": 5,
+        "semantic_type": "number",
+        "description": "Number of times the ad was displayed on the OTT platform or device"
+      }
+    },
+    {
+      "column": "brand_name",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "1800 Contacts"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "company",
+        "description": "Name of the brand for which the OTT advertising data is collected"
+      }
+    },
+    {
+      "column": "duration",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "30_days"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "timeframe",
+        "description": "Time period over which the OTT advertising data is aggregated"
+      }
+    }
+  ],
+  "field_names": [
+    "region",
+    "quintile",
+    "entity_type",
+    "entity_name",
+    "device_type",
+    "impressions",
+    "brand_name",
+    "duration"
+  ]
+}

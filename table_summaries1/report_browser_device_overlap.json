@@ -1,0 +1,269 @@
+{
+    "name": "report_browser_device_overlap",
+    "file_name": "report_browser_device_overlap",
+    "dataset_description": "This dataset provides detailed information about the overlap between browser and device usage for various advertisers and segments. It includes conversion rates, device types, browser information, and advertiser details across different countries.",
+    "fields": [
+        {
+            "column": "geo_country",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "US",
+                    "GB"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "country",
+                "description": "The country code where the data was collected"
+            }
+        },
+        {
+            "column": "advertiser_id",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "7156106",
+                    "5080801"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "id",
+                "description": "Unique identifier for the advertiser"
+            }
+        },
+        {
+            "column": "advertiser_name",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Pogo Energy c/o Rocketsauce Media Labs",
+                    "Betfred c/o Activewin"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "company",
+                "description": "Name of the advertiser and their associated agency"
+            }
+        },
+        {
+            "column": "segment_id",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "33130264",
+                    "34413670"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "id",
+                "description": "Unique identifier for the audience segment"
+            }
+        },
+        {
+            "column": "segment_name",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Pogo Energy- Existing Customers - Exclusion Pixel",
+                    "Betfred - eGaming - Standard Campaign Impressions"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "category",
+                "description": "Name and description of the audience segment"
+            }
+        },
+        {
+            "column": "device_type",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "phone"
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "device",
+                "description": "Type of device used"
+            }
+        },
+        {
+            "column": "device_model_id",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "102964",
+                    "106077"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "id",
+                "description": "Unique identifier for the device model"
+            }
+        },
+        {
+            "column": "device_model_name",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Celero 5G",
+                    "CH6"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "model",
+                "description": "Name of the device model"
+            }
+        },
+        {
+            "column": "device_make_name",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Boost Mobile",
+                    "Tecno"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "brand",
+                "description": "Brand or manufacturer of the device"
+            }
+        },
+        {
+            "column": "browser_id",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "8"
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "id",
+                "description": "Unique identifier for the browser"
+            }
+        },
+        {
+            "column": "browser_name",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Chrome (all versions)"
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "browser",
+                "description": "Name of the browser used"
+            }
+        },
+        {
+            "column": "converted_count",
+            "properties": {
+                "dtype": "number",
+                "std": 0,
+                "min": 1,
+                "max": 1,
+                "samples": [
+                    1
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "count",
+                "description": "Number of conversions"
+            }
+        },
+        {
+            "column": "total_count",
+            "properties": {
+                "dtype": "number",
+                "std": 5444,
+                "min": 3,
+                "max": 10333,
+                "samples": [
+                    10333,
+                    3
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "count",
+                "description": "Total number of impressions or events"
+            }
+        },
+        {
+            "column": "percent_converted",
+            "properties": {
+                "dtype": "number",
+                "std": 17.563108610782795,
+                "min": 0.009677731539727088,
+                "max": 33.33333333333333,
+                "samples": [
+                    0.009677731539727088,
+                    33.33333333333333
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "percentage",
+                "description": "Percentage of conversions relative to total count"
+            }
+        },
+        {
+            "column": "dayserial_numeric",
+            "properties": {
+                "dtype": "number",
+                "std": 0,
+                "min": 20250111,
+                "max": 20250111,
+                "samples": [
+                    20250111
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "date",
+                "description": "Date in YYYYMMDD format"
+            }
+        },
+        {
+            "column": "category",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "Utilities",
+                    "Gambling"
+                ],
+                "num_unique_values": 2,
+                "semantic_type": "category",
+                "description": "Main category of the advertiser's business"
+            }
+        },
+        {
+            "column": "subcategory",
+            "properties": {
+                "dtype": "category",
+                "samples": [
+                    "\\N"
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "category",
+                "description": "Subcategory of the advertiser's business (null values represented as \\N)"
+            }
+        },
+        {
+            "column": "day_numeric",
+            "properties": {
+                "dtype": "number",
+                "std": 0,
+                "min": 20250111,
+                "max": 20250111,
+                "samples": [
+                    20250111
+                ],
+                "num_unique_values": 1,
+                "semantic_type": "date",
+                "description": "Date in YYYYMMDD format (duplicate of dayserial_numeric)"
+            }
+        }
+    ],
+    "field_names": [
+        "geo_country",
+        "advertiser_id",
+        "advertiser_name",
+        "segment_id",
+        "segment_name",
+        "device_type",
+        "device_model_id",
+        "device_model_name",
+        "device_make_name",
+        "browser_id",
+        "browser_name",
+        "converted_count",
+        "total_count",
+        "percent_converted",
+        "dayserial_numeric",
+        "category",
+        "subcategory",
+        "day_numeric"
+    ]
+}

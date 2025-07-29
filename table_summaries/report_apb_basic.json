@@ -1,0 +1,4 @@
+{
+    "name": "report_apb_basic",
+    "error": "Summarizer failed: LLM enrichment failed. Please ensure the LLM returns valid JSON."
+}

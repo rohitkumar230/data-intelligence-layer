@@ -1,0 +1,106 @@
+{
+  "name": "brand_yt_overview",
+  "file_name": "brand_yt_overview",
+  "dataset_description": "This dataset provides an overview of brand performance on YouTube, including metrics such as views, reach, and frequency across different time durations and regions.",
+  "fields": [
+    {
+      "column": "region",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "National"
+        ],
+        "num_unique_values": 1,
+        "semantic_type": "location",
+        "description": "The geographical scope of the data, currently only showing 'National' level data."
+      }
+    },
+    {
+      "column": "views",
+      "properties": {
+        "dtype": "number",
+        "std": 8718852,
+        "min": 176,
+        "max": 28029114,
+        "samples": [
+          28029114,
+          601,
+          2760203
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "number",
+        "description": "The total number of times the brand's YouTube content has been viewed."
+      }
+    },
+    {
+      "column": "reach",
+      "properties": {
+        "dtype": "number",
+        "std": 8693669,
+        "min": 175,
+        "max": 27945152,
+        "samples": [
+          27945152,
+          589,
+          2718860
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "number",
+        "description": "The number of unique viewers who have seen the brand's YouTube content."
+      }
+    },
+    {
+      "column": "frequency",
+      "properties": {
+        "dtype": "number",
+        "std": 0.01793227704711074,
+        "min": 1.0,
+        "max": 1.0613658580154717,
+        "samples": [
+          1.0030045067601403,
+          1.0195756652209589,
+          1.015205797575008
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "number",
+        "description": "The average number of times a unique viewer has seen the brand's YouTube content."
+      }
+    },
+    {
+      "column": "brand_name",
+      "properties": {
+        "dtype": "string",
+        "samples": [
+          "clif bar",
+          "Guaranteed Rate",
+          "U.S. Cellular"
+        ],
+        "num_unique_values": 10,
+        "semantic_type": "company",
+        "description": "The name of the brand whose YouTube performance is being analyzed."
+      }
+    },
+    {
+      "column": "duration",
+      "properties": {
+        "dtype": "category",
+        "samples": [
+          "Yesterday",
+          "7_days",
+          "30_days"
+        ],
+        "num_unique_values": 3,
+        "semantic_type": "timeframe",
+        "description": "The time period over which the YouTube performance metrics are measured."
+      }
+    }
+  ],
+  "field_names": [
+    "region",
+    "views",
+    "reach",
+    "frequency",
+    "brand_name",
+    "duration"
+  ]
+}
